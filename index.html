@@ -1,16 +1,121 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>Ryu</title>
+	<title>Walker's Fab Site</title>
+
+
+<style>
+
+
+header, footer {
+	padding: 20px;
+	text-align:center;
+	font-family:"open-sans-condensed", sans-serif;
+	font-weight: bold;
+	color: white;
+	background-color: black;
+}
+
+	
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #76D7C4;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+    font-family: Arial Narrow, sans-serif;
+    font-size: 100%;
+}
+
+li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+li a:hover {
+    color: white;
+}
+
+body {
+   background-color: #CCD1D1;
+}
+	
+
+	
+	
+ h1 {font-size=100px;font-family:verdana;color:white;text-align:center;}
+ h2 {font-size=35px;font-family:verdana;color:black;text-align:center;}
+ h3 {font-size=35px;font-family:verdana;color:black;text-align:center;}
+ p {color:black;font-family:Geneva;font-size:20px}
+
+.active {
+    background-color: #66BB6A;
+    color: white;
+}
+
+</style>
 </head>
-<body>
 
-<a href="http://fakenews.com">About Me</a>
-  
-<h1>Hyun's Fab Lab Page</h1>
-<p>Welcome to Hyun's fab lab page!</p>
+	
+<header>
+	<h1>Hyun's Fab  Lab Page</h1>
+	
+</header>
+	
 
-<img src="Capture.png"/>
-  
-</body>
+<nav>
+    <ul>
+	    <li class="nav-li"><a class="active" href="index.html">HOME</a></li>
+      <li class="nav-li"><a href="aboutme.html">ABOUT ME</a></li>
+      <li class="nav-li"><a href="Marshmellow.html">STRAW TOWER</a></li>
+      <li class="nav-li"><a href="BubbleLamp.html">BUBBLE LAMP</a></li>
+      <li class="nav-li"><a href="garmentprinting.html">GARMENT PRINTING</a></li>
+      <li class="nav-li"><a href="LaserCutting.html">LASER CUTTING</a></li>
+      <li class="nav-li"><a href="3Dprinting.html">PRINTING/SCANNING</a></li>
+      <li class="nav-li"><a href="vinyl.html">STICKERS</a></li>
+      <li class="nav-li"><a href="cncmilling.html">MILLING/CASTING</a></li>
+      <li class="nav-li"><a href="vacuum.html">SKATEBOARD</a></li>
+      <li class="nav-li"><a href="electronics.html">SOLDERING</a></li>
+      <li class="nav-li"><a href="final.html">FINAL PROJECT</a></li>
+    </ul>
+</nav>
+
+
+<body>	
+	<p> Sophomore at Western Reserve Academy <p1>
+</body>	
+
+	
+<footer>
+</footer>
+	
+	
 </html>
