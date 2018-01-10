@@ -1,0 +1,131 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flappy Bird Clone  - Flappy Creator</title>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+
+<meta name="description" content="Flappy Bird Clone  - Flappy Creator">
+<meta name="author" content="Jared Feldman">
+<meta name="keywords"
+	content="flappy bird flap wing pipe create creator Dong Nguyen iphone game android game create your own game">
+
+<meta property="og:title" content="Flappy Bird Clone  - Flappy Creator" />
+<meta property="og:description"
+	content="Create your own Flappy Bird parody game" />
+<meta property="og:type" content="website" />
+<meta property="og:url"
+	content="http://www.flappycreator.com/flappy.php?id=54df6cdddbcc4" />
+<meta property="og:image"
+	content="http://www.flappycreator.com/preview.php?id=54df6cdddbcc4" />
+
+<script language="JavaScript">
+	var bird_picture = "default/bird.png";
+	var tube1_picture = "default/tube1.png";
+	var tube2_picture = "default/tube2.png";
+	var ground_picture = "default/ground.png";
+	var bg_picture = "default/bg.png";
+	
+	var wing_sfx = "default/sfx_wing.mp3";
+	var point_sfx = "default/sfx_point.mp3";
+	var hit_sfx = "default/sfx_hit.mp3";
+	var die_sfx = "default/sfx_die.mp3";
+	var swooshing_sfx = "default/sfx_swooshing.mp3";
+	
+	var game_title = "Flappy Bird\nClone ";
+	var game_instructions = "By Victor Colon";
+
+	var game_over = "GAMEOVER";
+	var high_score = "HIGH SCORE";
+	var try_again = "TOUCH TO TRY AGAIN";
+</script>
+
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: #000;
+}
+
+#screen canvas {
+	margin: 0 auto;
+}
+
+#github {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+}
+
+#loading {
+	position: absolute;
+	font-family: "Verdana";
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 24px;
+	top: 50%;
+}
+</style>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<!-- Font Awesome -->
+<link
+	href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"
+	rel="stylesheet" type="text/css">
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48305216-1', 'flappycreator.com');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body style="background-color: black;">
+
+	<div id="loading">Loading...</div>
+	<div id="screen"></div>
+	<div id="github" style="display: none;"></div>
+	<div style="margin: 1px; position: absolute; bottom: 5px; left: 5px">
+		
+		<span>
+		 <button id="toggle" type="button" class="btn btn-default"><i id="toggle_icon"
+				class="fa fa-minus"></i></button>
+		</span>
+	
+		<span id="buttons">
+			<a href="share.php?id=54df6cdddbcc4" class="btn btn-primary" role="button"><i
+				class="fa fa-share"></i> Share</a> <a href="index.php"
+				class="btn btn-success" role="button"><i class="fa fa-home"></i>
+				FlappyCreator.com</a>
+		</span>
+
+	</div>
+
+</body>
+
+<!-- Flappy Bird Game -->
+<script src="flappy.min.js?v=02131824"></script>
+
+<!-- JQuery -->
+<script
+	src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<script
+	src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	
+<script src="button.js"></script>
+
+</html>
